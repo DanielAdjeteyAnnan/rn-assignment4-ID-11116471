@@ -11,7 +11,7 @@ export default function StatusBarComponent() {
       <View style={styles.icons}>
          <FontAwesome name="signal" size={20} style={[styles.icon, { marginRight:5 }]} />
           <Ionicons name="wifi" size={20} style={[styles.icon, { marginRight: 5 }]}/>
-           <MaterialIcons name="battery-full" size={20} style={[styles.icon, { marginRight:5 }]}/>
+           <MaterialIcons name="battery-full" size={24} style={[styles.icon, { marginRight:5 ,  transform: [{ rotate: '90deg' }]}]}/>
       </View>
      
       <StatusBar style="auto" />
