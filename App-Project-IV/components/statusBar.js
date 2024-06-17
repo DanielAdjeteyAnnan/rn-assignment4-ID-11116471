@@ -9,9 +9,9 @@ export default function StatusBarComponent() {
     <View style={styles.statBar}>
       <Text style={styles.fontColor}>9:14</Text>
       <View style={styles.icons}>
-         <FontAwesome name="signal" size={20} style={[styles.icon, { marginRight:5 }]} />
-          <Ionicons name="wifi" size={20} style={[styles.icon, { marginRight: 5 }]}/>
-           <MaterialIcons name="battery-full" size={24} style={[styles.icon, { marginRight:5 ,  transform: [{ rotate: '90deg' }]}]}/>
+         <FontAwesome name="signal" size={20} style={[styles.icons, { marginRight:5 }]} />
+          <Ionicons name="wifi" size={20} style={[styles.icons, { marginRight: 5 }]}/>
+           <MaterialIcons name="battery-full" size={25} style={[styles.icons, { marginRight:5 ,  transform: [{ rotate: '90deg' }]}]}/>
       </View>
      
       <StatusBar style="auto" />
@@ -21,22 +21,21 @@ export default function StatusBarComponent() {
 
 const styles = StyleSheet.create({
   statBar: {
-    position: 'absolute',
     width: '100%',
-    top:30,
+    top:10,
     left:10,
     height:44,
   },
   fontColor: {
     fontSize: 20,
     left: 10,
-    top: 12,
+    top: 5,
     height:21,
   },
    icons: {
     flexDirection: 'row',
-    left:320,
-    height:21,
+    left:150,
+    height:23,
     bottom:8,
     color:'black',
   }
