@@ -1,6 +1,6 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, SafeAreaView, TouchableOpacity, ScrollView, TextInput, Text, Image, View, ImageBackground } from 'react-native';
+import { StyleSheet, TouchableOpacity, ScrollView, TextInput, Text, Image, View, ImageBackground } from 'react-native';
 
 export default function HomeScreen() {
     return (
