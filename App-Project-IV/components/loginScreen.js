@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, SafeAreaView } from 'react-native';
 
 export default function LoginScreen({ navigation }) {
   const [username, setUsername] = useState('');
@@ -18,6 +18,7 @@ export default function LoginScreen({ navigation }) {
   };
 
 return (
+  <SafeAreaView>
   <View style={styles.log}>
 
       <View style={styles.welcomB}>
@@ -79,6 +80,7 @@ return (
     
      
   </View>
+  </SafeAreaView>
   
 );
 }
@@ -167,7 +169,7 @@ const styles = StyleSheet.create({
 
   }, 
   regist: {
-    marginTop: 50,
+    marginTop: 100,
     marginHorizontal:10,
     flexDirection: 'row',
     alignItems: 'center',
@@ -179,7 +181,8 @@ const styles = StyleSheet.create({
   },
   regHere: {
     color: '#356899',
-    marginLeft:5
+    marginLeft:5,
+    
   },
      
   });
